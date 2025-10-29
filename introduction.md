@@ -1,44 +1,16 @@
+// Temporarily replace the fetch with this:
+setMarkdown(`
+# Hello World
 
-# somepackage
+This is a **bold** text and this is *italic*.
 
-<!-- badges: start -->
+## Subheading
 
-<!-- badges: end -->
+- Item 1
+- Item 2
+- Item 3
 
-The goal of somepackage is to ...
-
-## Installation
-
-You can install the development version of somepackage from [GitHub](https://github.com/) with:
-
-``` r
-# install.packages("devtools")
-devtools::install_github("jane/somepackage")
-```
-
-## Example
-
-This is a basic example which shows you how to solve a common problem:
-
-```{r example}
-library(somepackage)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-```{r cars}
-summary(cars)
-```
-
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-`devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
-
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+\`\`\`javascript
+const test = "hello";
+\`\`\`
+`);
