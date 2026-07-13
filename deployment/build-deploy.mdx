@@ -3,7 +3,7 @@
 This guide walks you through packaging a trained model and pushing it to a registered EdgeStudio device.
 
 ---
-
+![Top Image](../Images/Deploy/part:1.png)
 ## What You'll Need
 
 - A completed training execution you want to deploy (see [Training](/docs/training))
@@ -11,59 +11,47 @@ This guide walks you through packaging a trained model and pushing it to a regis
 
 ---
 
-## Step 1: Select a Model to Deploy
+## Step 1: Select a Device 
 
-![Insert screenshot: deployment page, select execution](../Images/build-deploy-1.png)
+![Insert screenshot: deployment page, select execution](../Images/Deploy/part:7.png)
 
-Describe how to pick which training execution to build from here.
-
----
-
-## Step 2: Choose a Target Device
-
-![Insert screenshot: device selection](../Images/build-deploy-2.png)
-
-Describe how to select which registered device to deploy to here.
+Choose a device which you want to deploy your trained model to.
 
 ---
 
-## Step 3: Start the Build
+## Step 2: Generate a Pairing Code
 
-![Insert screenshot: build in progress](../Images/build-deploy-3.png)
+![Insert screenshot: device selection](../Images/Deploy/part:6.png)
 
-Describe what happens during the build step (quantization, packaging, etc.) here.
+Click **Generate Pairing Code** to create a unique code for this deployment. This code will be used to connect your device with dashboard. You need to paste this code in [Here](./setup-device.mdx#step-8-register-your-device) to complete the device setup.
+---
 
-> **Note**
-> Add any expected build duration or size constraints here.
+## Step 3: Create a Build
+
+Now click on `New Build` where you find all your trained models. Select anyone of them and  click on `start build`.
+
+![Build](../Images/Deploy/part:4.png)
+![Build](../Images/Deploy/part:5.png)
 
 ---
 
-## Step 4: Push to Device
+## Step 4: Deploy the Build
 
-![Insert screenshot: deploy/push confirmation](../Images/build-deploy-4.png)
+![Build](../Images/Deploy/part:4.png)
 
-Describe how the build gets transferred and installed on the device here.
+Now click on `Deploy` to deploy the build to your device. You can see the status of the deployment in the `Device logs` section.
 
----
-
-## Step 5: Confirm It's Running
-
-![Insert screenshot: device status showing deployed model](../Images/build-deploy-5.png)
-
-Describe how to verify the model is live on the device here.
+![Build](../Images/Deploy/part:3.png)
 
 ---
 
-## Troubleshooting
+## Step 5: Inference Running on Device
 
-- **The build failed.**
-  Add troubleshooting notes here.
+Once the build is deployed, you can see the inference of the model inside the dashboard. You can also see the status of the device in the `Device logs` section.
 
-- **The device isn't picking up the new build.**
-  Add troubleshooting notes here.
+![Insert screenshot: device status showing deployed model](../Images/Deploy/part:2.png)
+![Insert screenshot: device status showing deployed model](../Images/Deploy/part:0.png)
 
-- **The device shows as offline.**
-  Add troubleshooting notes here, or see [Setup Device](/docs/deployment/setup-device) troubleshooting.
 
 ---
 
