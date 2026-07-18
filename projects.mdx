@@ -1,44 +1,41 @@
+# Project
 
-# somepackage
+A project is where you bring together devices, datasets, training, and deployment for a single model.
 
-<!-- badges: start -->
+---
 
-<!-- badges: end -->
+## Overview
 
-The goal of somepackage is to ...
+Everything in EdgeStudio happens inside a project. When you create one, you pick a task type — **Image Classification**, **Object Detection**, or **Audio Anomaly Detection** — which determines the training options and metrics available later on.
 
-## Installation
+---
 
-You can install the development version of somepackage from [GitHub](https://github.com/) with:
+## Creating a Project
 
-``` r
-# install.packages("devtools")
-devtools::install_github("jane/somepackage")
-```
+From the [Dashboard](/docs/dashboard), click **New Project**, give it a name, and choose a task type. The task type can't be changed after creation, so pick the one that matches what you're trying to build.
 
-## Example
+---
 
-This is a basic example which shows you how to solve a common problem:
+## Managing a Project
 
-```{r example}
-library(somepackage)
-## basic example code
-```
+From the Projects table you can:
 
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
+- **Open** a project to work on its [Devices](/docs/devices), [Datasets](/docs/datasets), [Training](/docs/training), and [Deployment](/docs/deployment)
+- **Edit** a project's name/description
+- **Delete** a project
 
-```{r cars}
-summary(cars)
-```
+---
 
-You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date.
-`devtools::build_readme()` is handy for this.
+## Personal vs. Organization Projects
 
-You can also embed plots, for example:
+Projects live in whichever workspace you created them in. Switch workspaces from the [Dashboard](/docs/dashboard) to see personal projects vs. an organization's projects — they're kept separate.
 
-```{r pressure, echo = FALSE}
-plot(pressure)
-```
+---
 
-In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
+## Troubleshooting
+
+- **I can't find a project I created.**
+  Check you're in the right workspace (Personal vs. Organization) using the switcher on the Dashboard.
+
+- **I picked the wrong task type.**
+  Task type can't be changed after creation — create a new project with the correct type instead.
