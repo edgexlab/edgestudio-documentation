@@ -17,6 +17,20 @@ This documentation covers everything you need to get started, from your first pr
 
 ---
 
+## Key Concepts
+
+A few terms you'll see throughout this documentation:
+
+- **Project** — the top-level container for your work. Each project has its own datasets, training executions, and paired devices.
+- **Dataset** — the labeled data you train a model on. Created and managed under [Datasets](/docs/datasets).
+- **Execution** — a single training run. Executions form a lineage — you can fine-tune a new execution from a completed baseline and compare metrics between them. See [Training](/docs/training).
+- **Device** — the physical edge hardware a model deploys to. A device is first added to your project (see [Devices](/docs/devices)), then set up over wifi and registered (see [Setup Device](/docs/deployment/setup-device)).
+- **Build** — a trained execution packaged for a specific device. Building a model and pushing it is the last step, covered in [Build & Deploy](/docs/deployment/build-deploy).
+
+The typical flow is: **Dataset → Training Execution → Build → Deploy → Device**.
+
+---
+
 ## Where to Start
 
 If you're new here, head to **[Getting Started](/docs/getting-started)** for a guided walkthrough of your first project.
@@ -32,4 +46,4 @@ Otherwise, jump straight to the guide you need:
 
 ## Need Help?
 
-If you run into something this documentation doesn't cover, contact EdgeStudio support.
+If you run into something this documentation doesn't cover, contact EdgeStudio support <!-- TODO: add support email/link -->.
