@@ -8,42 +8,6 @@ This documentation covers everything you need to get started, from your first pr
 
 ---
 
-## What You Can Do With EdgeStudio
+## Supported Devices
 
-- **Collect and manage datasets** — upload, label, and organize data for your project.
-- **Train models** — run image classification, object detection, or anomaly detection training without writing code.
-- **Compare executions** — track runs, fine-tune from a baseline, and compare metrics across a lineage of executions.
-- **Deploy to devices** — package a trained model and push it to a real edge device.
-
----
-
-## Key Concepts
-
-A few terms you'll see throughout this documentation:
-
-- **Project** — the top-level container for your work. Each project has its own datasets, training executions, and paired devices.
-- **Dataset** — the labeled data you train a model on. Created and managed under [Datasets](/docs/datasets).
-- **Execution** — a single training run. Executions form a lineage — you can fine-tune a new execution from a completed baseline and compare metrics between them. See [Training](/docs/training).
-- **Device** — the physical edge hardware a model deploys to. A device is first added to your project (see [Devices](/docs/devices)), then set up over wifi and registered (see [Setup Device](/docs/deployment/setup-device)).
-- **Build** — a trained execution packaged for a specific device. Building a model and pushing it is the last step, covered in [Build & Deploy](/docs/deployment/build-deploy).
-
-The typical flow is: **Dataset → Training Execution → Build → Deploy → Device**.
-
----
-
-## Where to Start
-
-If you're new here, head to **[Getting Started](/docs/getting-started)** for a guided walkthrough of your first project.
-
-Otherwise, jump straight to the guide you need:
-
-- **[Devices](/docs/devices)** — connect and manage the hardware you'll deploy to.
-- **[Datasets](/docs/datasets)** — bring in and prepare your data.
-- **[Training](/docs/training)** — run and monitor training executions.
-- **[Deployment](/docs/deployment)** — set up a device and ship a model to it.
-
----
-
-## Need Help?
-
-If you run into something this documentation doesn't cover, contact EdgeStudio support <!-- TODO: add support email/link -->.
+<div data-component="hardware-coverage"></div>
