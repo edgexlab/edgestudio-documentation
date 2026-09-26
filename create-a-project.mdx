@@ -1,57 +1,29 @@
 # Create a Project
 
-Everything in EdgeStudio happens inside a project, so creating one is your first step. This page shows where to start and what each part of the **New Project** dialog does.
+Everything in EdgeStudio happens inside a project, so creating one is your first step.
 
 ---
 
-## Open the New Project dialog
+## 1. Click New project
 
-1. Sign in and open the [Dashboard](/docs/dashboard).
-2. Check the workspace switcher: the project is created in whichever workspace you're in, **Personal** or an **Organization**.
-3. In the **Projects** card, click **New project** (the button with the **+** icon in the top-right corner of the card).
+On the [Dashboard](/docs/dashboard), find the **Projects** card and click **New project**.
 
-The **New Project** dialog opens.
+![The Projects card with the New project button](./Images/create-a-project/new-project-button.png)
 
----
-
-## The New Project dialog
-
-The dialog has three fields: a task type, a name, and an optional description.
-
-### Task Type
-
-Task Type is required. Pick one of the cards:
-
-| Task type | What it's for |
-| --- | --- |
-| **Image Classification** | Categorize images into predefined classes |
-| **Audio Anomaly Detection** | Detect abnormal patterns and outliers |
-| **Vibration Anomaly Detection** | Detect abnormal vibration patterns in machinery |
-| **Object Detection** | Locate and identify objects in images. Marked **Coming soon** for now, so it can't be selected yet. |
-
-The selected card is highlighted in blue. The task type decides which training options and metrics you'll see later, and it **can't be changed after the project is created**, so choose the one that matches what you want to build.
-
-### Project Name
-
-Project Name is required. Use between 3 and 128 characters. A counter under the field shows how much of the 128-character limit you've used.
-
-### Description
-
-Description is optional and can be up to 256 characters. A counter under the field shows how much of the limit you've used.
+The project is created in the workspace you're currently in, **Personal** or an **Organization**, so check the workspace switcher first.
 
 ---
 
-## Create the project
+## 2. Fill in the New Project dialog
 
-At the bottom of the dialog you have two buttons:
+<img src="./Images/create-a-project/new-project-dialog.png" alt="The New Project dialog with task type, project name, and description" width="420" style="display:block;margin:0 auto" />
 
-- **Cancel** closes the dialog without creating anything.
-- **Create Project** creates the project. It stays disabled until you've selected a task type and entered a name of at least 3 characters.
-
-While the project is being created the button reads **Creating…**. When it's done, the dialog closes, a confirmation message tells you whether the project was created in your personal or organization workspace, and the new project appears in the **Projects** table.
+- **Task Type** (required) — choose what you want to build: **Image Classification**, **Audio Anomaly Detection**, or **Vibration Anomaly Detection**. **Object Detection** is coming soon. The task type can't be changed after the project is created.
+- **Project Name** (required) — between 3 and 128 characters.
+- **Description** (optional) — up to 256 characters.
 
 ---
 
-## What's next
+## 3. Click Create Project
 
-Click your new project in the Projects table to open it. From there you can work on its [Devices](/docs/devices), [Datasets](/docs/datasets), [Training](/docs/training), and [Deployment](/docs/deployment). For managing projects afterwards (editing or deleting them), see [Project](/docs/projects).
+**Create Project** becomes available once you've picked a task type and entered a name. Your new project then appears in the **Projects** table. Click it to open it and start working on its [Devices](/docs/devices), [Datasets](/docs/datasets), and [Training](/docs/training).
